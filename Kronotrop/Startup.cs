@@ -32,9 +32,6 @@ namespace Kronotrop
             services.AddSingleton<IDrinkService, DrinkService>();
             services.AddSingleton<IAdditionService, AdditionService>();
             services.AddSingleton<IOrderService, OrderService>();
-            services.AddTransient<AdditionValidationControls>();
-            services.AddTransient<DrinkValidationControls>();
-            services.AddTransient<OrderValidationControls>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Kronotrop.Api", Version = "v1" });
